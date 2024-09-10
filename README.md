@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><h2>EmmNeDy</h2> 
-       <b>Aspiring Coder and Security Engineer.</b> .... Portfolio 
+    <title> EmmNeDy 
+       Aspiring Coder and Security Engineer. .... Portfolio 
       Under Maintenance</title>
     <style>
         body {
