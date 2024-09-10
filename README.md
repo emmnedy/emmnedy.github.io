@@ -57,10 +57,10 @@
     z-index: 1; /* Ensure it appears above the background */
     pointer-events: none; /* Ensure it doesn’t interfere with canvas interactions */
          }
-        #gameCanvas {
+        /* #gameCanvas {
             border: 1px solid #00796b;
             background-color: #ffffff;
-        }
+        }*/
     </style>
 </head>
 <body>
