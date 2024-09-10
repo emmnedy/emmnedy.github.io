@@ -41,6 +41,24 @@
         .game {
             margin-top: 20px;
         }
+        
+#gameCanvas {
+    border: 1px solid #00897b;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#gameCanvas::before {
+    content: "EmmReX";
+    color: #00796b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px; /* Adjust as needed */
+    z-index: 1; /* Ensure it appears above the background */
+    pointer-events: none; /* Ensure it doesn’t interfere with canvas interactions */
+}
         #gameCanvas {
             border: 1px solid #00796b;
             background-color: #ffffff;
@@ -51,7 +69,7 @@
     <div class="container">
         <div class="animation"></div>
         <div class="title">Under Maintenance</div>
-        <div class="message">portfolio belongs to <b>EmmNeDy</b>, aspiring Coder n Security Engineer , <p>I enjoy learning new Programming languagesa and exploring the world of Tech</p></div>
+        <div class="message">portfolio belongs to <b>EmmNeDy</b>, aspiring Coder n Security Engineer , <p>I enjoy learning new Programming languages and exploring the world of Tech</p></div>
         <div class="message">We are currently working on something awesome. Stay tuned!</div>
         <div class="game">
             <div class="message">How about a game!</div>
