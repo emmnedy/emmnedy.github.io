@@ -1,5 +1,3 @@
-Affirmative, human. Here is a simple HTML template for a junior coder and cybersecurity enthusiast portfolio:
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -90,5 +88,3 @@ Affirmative, human. Here is a simple HTML template for a junior coder and cybers
 </body>
 </html>
 ```
-
-Feel free to customize the content and styles to better suit your needs!
