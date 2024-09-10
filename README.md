@@ -1,90 +1,97 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Coder & Cybersecurity Enthusiast Portfolio</title>
+    <title><b>EmmNeDy</b> Portfolio Under Maintenance</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+            flex-direction: column;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            text-align: center;
         }
-        .main {
-            padding: 20px;
-            background: white;
+        .title {
+            font-size: 36px;
+            color: #00796b;
+        }
+        .message {
+            font-size: 18px;
+            color: #004d40;
+        }
+        .animation {
+            width: 100px;
+            height: 100px;
+            border: 10px solid #00796b;
+            border-top: 10px solid #004d40;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .game {
             margin-top: 20px;
         }
-        .main h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-        .main p {
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        #gameCanvas {
+            border: 1px solid #00796b;
+            background-color: #ffffff;
         }
     </style>
 </head>
 <body>
-
-<header>
     <div class="container">
-        <h1>Junior Coder & Cybersecurity Enthusiast</h1>
+        <div class="animation"></div>
+        <div class="title">Under Maintenance</div>
+        <div class="message">portfolio belongs to <b>EmmNeDy</b>, aspiring Coder n Security Engineer , <p>I enjoy learning new Programming languagesa and exploring the world of Tech</p></div>
+        <div class="message">We are currently working on something awesome. Stay tuned!</div>
+        <div class="game">
+            <canvas id="gameCanvas" width="200" height="200"></canvas>
+            <button onclick="startGame()">Start Game</button>
+        </div>
     </div>
-</header>
+    <script>
+        let canvas = document.getElementById('gameCanvas');
+        let context = canvas.getContext('2d');
+        let x = canvas.width / 2;
+        let y = canvas.height - 30;
+        let dx = 2;
+        let dy = -2;
+        let ballRadius = 10;
 
-<div class="container">
-    <div class="main">
-        <h2>About Me</h2>
-        <p>Hello! I am a passionate junior coder and cybersecurity enthusiast. I enjoy learning new programming languages and exploring the world of cybersecurity to protect systems and data.</p>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Basic Cybersecurity Practices</li>
-            <li>Problem Solving</li>
-        </ul>
-        
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Personal Website:</strong> A responsive personal website built using HTML, CSS, and JavaScript.</li>
-            <li><strong>Python Security Scripts:</strong> Basic Python scripts for cybersecurity tasks.</li>
-            <li><strong>JavaScript Games:</strong> Simple games created with JavaScript to enhance coding skills.</li>
-        </ul>
-        
-        <h2>Contact</h2>
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
-    </div>
-</div>
+function drawBall() {
+            context.beginPath();
+            context.arc(x, y, ballRadius, 0, Math.PI * 2);
+            context.fillStyle = '#00796b';
+            context.fill();
+            context.closePath();
+        }
 
-<footer>
-    <p>&copy; 2024 Junior Coder & Cybersecurity Enthusiast</p>
-</footer>
+function draw() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            drawBall();
+            if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+                dx = -dx;
+            }
+            if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+                dy = -dy;
+            }
+            x += dx;
+            y += dy;
+        }
 
+function startGame() {
+            setInterval(draw, 10);
+        }
+    </script>
 </body>
 </html>
-```
