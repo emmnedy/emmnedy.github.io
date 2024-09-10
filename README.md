@@ -41,14 +41,12 @@
         .game {
             margin-top: 20px;
         }
-        
-#gameCanvas {
+        #gameCanvas {
     border: 1px solid #00897b;
     background-color: #ffffff;
     position: relative;
-}
-
-#gameCanvas::before {
+        }
+        #gameCanvas::before {
     content: "EmmReX";
     color: #00796b;
     position: absolute;
@@ -58,7 +56,7 @@
     font-size: 20px; /* Adjust as needed */
     z-index: 1; /* Ensure it appears above the background */
     pointer-events: none; /* Ensure it doesn’t interfere with canvas interactions */
-}
+         }
         #gameCanvas {
             border: 1px solid #00796b;
             background-color: #ffffff;
