@@ -28,7 +28,7 @@
         .animation {
             width: 100px;
             height: 100px;
-            border: 10px solid #00796b;
+            border: 10px solid #00897b;
             border-top: 10px solid #004d40;
             border-radius: 50%;
             animation: spin 2s linear infinite;
@@ -53,8 +53,8 @@
         <div class="title">Under Maintenance</div>
         <div class="message">portfolio belongs to <b>EmmNeDy</b>, aspiring Coder n Security Engineer , <p>I enjoy learning new Programming languagesa and exploring the world of Tech</p></div>
         <div class="message">We are currently working on something awesome. Stay tuned!</div>
-        <div class="message">How about a game!</div>
         <div class="game">
+            <div class="message">How about a game!</div>
             <canvas id="gameCanvas" width="200" height="200"></canvas>
             <button onclick="startGame()">Start Game</button>
         </div>
