@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -54,6 +53,7 @@
         <div class="title">Under Maintenance</div>
         <div class="message">portfolio belongs to <b>EmmNeDy</b>, aspiring Coder n Security Engineer , <p>I enjoy learning new Programming languagesa and exploring the world of Tech</p></div>
         <div class="message">We are currently working on something awesome. Stay tuned!</div>
+        <div class="message">How about a game!</div>
         <div class="game">
             <canvas id="gameCanvas" width="200" height="200"></canvas>
             <button onclick="startGame()">Start Game</button>
